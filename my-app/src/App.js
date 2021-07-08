@@ -3,9 +3,7 @@ import './App.css';
 import { AppBar, Box, makeStyles, Typography} from '@material-ui/core/';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import IconButton from '@material-ui/core/IconButton';
-import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@material-ui/core'
-
+import Slider from './slider.js'
 
 const useStyles = makeStyles(({
   appBar:{
@@ -38,6 +36,7 @@ export function App() {
         <Typography variant='h3' style={{fontFamily: 'FreeMono'}}>Cook Book</Typography>
         <IconButton color="black"  style={{position: 'absolute', right: '30px'}}><FavoriteBorderIcon /></IconButton>
       </AppBar>
+      <Slider/>
    </div>
   );
 }
