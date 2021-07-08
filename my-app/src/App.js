@@ -1,11 +1,13 @@
 
 import './App.css';
+import { ingredientsListBreakfast1, ingredientsListBreakfast2 } from './ingredientsList';
 import { AppBar, Box, makeStyles, Typography, Container} from '@material-ui/core/';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import IconButton from '@material-ui/core/IconButton';
 import Slider from './slider.js'
 import { Ingredients } from './ingredients';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
+
 
 const useStyles = makeStyles(({
   appBar:{
@@ -22,10 +24,15 @@ const useStyles = makeStyles(({
     width: '65px',
     marginLeft: '10px',
   },
-  pasta:{
+  breakfast1:{
     height: '400px',
     width: '400px',
     marginLeft: '15px'
+  },
+  breakfast2:{
+    height: '400px',
+    width: '400px',
+    marginRight: '15px'
   }
 }));
 
@@ -45,13 +52,23 @@ export function App() {
         <IconButton color="black"  style={{position: 'absolute', right: '30px'}}><FavoriteBorderIcon /></IconButton>
       </AppBar>
       <Slider/>
-      <Container style={{ display: 'flex', flexDirection: 'row' }}>
+      <Container style={{ display: 'flex', flexDirection: 'row' , marginTop:'100px'}}>
         <Box>
-          <img src="pasta.jpg"  alt='' className={classes.pasta}/>
+          <img src="breakfast1.jpg"  alt='' className={classes.breakfast1}/>
         </Box>
         <Container>
-          <Ingredients/>
+          <Ingredients ingredients={ingredientsListBreakfast1}></Ingredients>
         </Container>
+      </Container>
+      <Container style={{ display: 'flex', flexDirection: 'row', marginTop: '100px'}}>
+        <Container style={{ backgroundColor: 'grey'}}>
+          <Box style={{marginLeft:'410px'}}>
+            <Ingredients ingredients={ingredientsListBreakfast2}></Ingredients>
+          </Box>
+        </Container>
+        <Box>
+          <img src="breakfast2.jpg"  alt='' className={classes.breakfast2}/>
+        </Box>
       </Container>
    </div>
   );

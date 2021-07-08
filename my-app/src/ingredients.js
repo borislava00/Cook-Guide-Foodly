@@ -1,25 +1,25 @@
 import { IngredientRow } from "./ingredientRow";
 
-const ingredients=[
-    {
-        amount: "150 gr ",
-        name: "Mushroom Pasta with Goat Cheese",
-    },
-    {
-        amount: "50 gr ",
-        name: "Learus Vacuum Cleaner",
-    },
-    {
-        amount: "100 ml ",
-        name: "Chipotle Chicken Taquitos",
-    }   
-]
+// const ingredients=[
+//     {
+//         amount: "150 gr ",
+//         name: "Mushroom Pasta with Goat Cheese",
+//     },
+//     {
+//         amount: "50 gr ",
+//         name: "Learus Vacuum Cleaner",
+//     },
+//     {
+//         amount: "100 ml ",
+//         name: "Chipotle Chicken Taquitos",
+//     }   
+// ]
 
-export function Ingredients() {
+export function Ingredients({ingredients}) {
 
     return (
         ingredients.map((item, index) => {
-            return <IngredientRow amount={(item.amount)} data={(item.name)} key={index}  />
+            return <IngredientRow amount={item.amount} data={item.data} key={index}  />
         })
     );
 }
