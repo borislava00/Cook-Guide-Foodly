@@ -3,7 +3,7 @@ import Carousel from "react-material-ui-carousel"
 import autoBind from "auto-bind"
 import './examples.css';
 
-import {Card, CardContent, CardMedia, Typography, Grid, Button, Checkbox, FormControlLabel, Radio, RadioGroup, FormLabel, Slider} from '@material-ui/core';
+import {Card, CardMedia, Typography, Grid,} from '@material-ui/core';
 
 function Banner(props) {
     if (props.newProp) console.log(props.newProp)
