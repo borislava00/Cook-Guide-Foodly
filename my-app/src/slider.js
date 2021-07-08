@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from "react-material-ui-carousel"
 import autoBind from "auto-bind"
-import './examples.css';
+import './slider.css';
 
 import {Card, CardMedia, Typography, Grid,} from '@material-ui/core';
 
@@ -45,48 +45,48 @@ const items = [
     {
         Items: [
             {
-                Name: "Mushroom Pasta with Goat Cheese",
-                Image: 'pasta.jpg'
+                Name: "Poached eggs on avocado & feta toast",
+                Image: 'breakfast1.jpg'
             },
             {
-                Name: "Learus Vacuum Cleaner",
-                Image: 'dinner.jpeg'
+                Name: "American pancakes",
+                Image: 'breakfast2.jpg'
             },
             {
-                Name: "Chipotle Chicken Taquitos",
-                Image: 'chicken.jpeg'
+                Name: "Peanut butter banana oatmeal",
+                Image: 'breakfast3.jpg'
             }
         ]
     },
     {
         Items: [
             {
-                Name: "Mushroom Pasta with Goat Cheese",
-                Image: 'chicken.jpeg'
+                Name: "Greek salas",
+                Image: 'lunch1.jpg'
             },
             {
-                Name: "Mushroom Pasta with Goat Cheese",
-                Image: 'dinner.jpeg'
+                Name: "Chickpea falafel",
+                Image: 'lunch2.jpg'
             },
             {
-                Name: "Learus Vacuum Cleaner",
-                Image: 'pasta.jpg'
+                Name: "Creamy lemon garlic chicken with asparagus",
+                Image: 'lunch3.jpg'
             }
         ]
     },
     {
         Items: [
             {
-                Name: "Lemon Chicken With Asparagus",
-                Image: 'dinner.jpeg'
+                Name: "Creamy lemon zucchini pasta",
+                Image: 'dinner1.jpg'
             },
             {
-                Name: "Mushroom Pasta with Goat Cheese",
-                Image: 'dinner.jpeg'
+                Name: "Salmon with potatoes and asparagus",
+                Image: 'dinner2.jpg'
             },
             {
-                Name: "Breaded Lemon Chicken",
-                Image: 'dinner.jpeg'
+                Name: "Citrus & chile glazed pork chops",
+                Image: 'dinner3.jpg'
             }
         ]
     }
