@@ -42,3 +42,26 @@ export const ingredientsListBreakfast2 = [
         data:'millk'
     }
 ]
+
+export const ingredientsListBreakfast3 = [
+  {
+    amount: '3 cups ',
+    data: 'fat-free milk or water'
+  },
+  {
+    amount: '1/4 tsp ',
+    data: 'salt'
+  },
+  {
+    amount:'2 large ',
+    data:'bananas, sliced'
+  },
+  {
+    amount:'2 tbsp ',
+    data:'peanut butter'
+  },
+  {
+    amount:'1/2 tsp ',
+    data:'vanilla extract'
+  }
+]
