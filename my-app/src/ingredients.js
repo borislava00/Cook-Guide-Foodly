@@ -1,4 +1,4 @@
-import { IngredientRow } from "./ingredientRow";
+    import { IngredientRow } from "./ingredientRow";
 import { Box } from "@material-ui/core";
 
 export function Ingredients({ingredients}) {
