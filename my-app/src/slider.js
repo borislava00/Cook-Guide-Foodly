@@ -92,7 +92,7 @@ const items = [
     }
 ]
 
-class BannerExample extends React.Component {
+class Slider extends React.Component {
     constructor(props) {
         super(props);
 
@@ -109,7 +109,7 @@ class BannerExample extends React.Component {
 
     render() {
         return (
-            <div style={{ marginTop: "0px", color: "#494949"}}>
+            <div style={{ marginTop: "10px", color: "#494949"}}>
                 <Carousel
                     autoPlay={this.state.autoPlay}
                     animation={this.state.animation}
@@ -120,7 +120,7 @@ class BannerExample extends React.Component {
                     onChange={(now, previous) => console.log(`OnChange${now}. Previously${previous}`)}>
                     {
                         items.map((item, index) => {
-                            return <Banner item={item} key={index}  />
+                            return <Banner item={item} key={index}/>
                         })
                     }
                 </Carousel>
@@ -130,4 +130,4 @@ class BannerExample extends React.Component {
     }
 }
 
-export default BannerExample;
+export default Slider;
