@@ -21,6 +21,7 @@ function Banner(props) {
                     className="Media"
                     image={item.Image}
                     title={item.Name}
+                    onClick={() => document.getElementById(item.Id)?.scrollIntoView()}
                 >
                     <Typography className="MediaCaption">
                         {item.Name}
@@ -46,15 +47,19 @@ const items = [
         Items: [
             {
                 Name: "Poached eggs on avocado & feta toast",
-                Image: 'breakfast1.jpg'
+                Image: 'breakfast1.jpg',
+                Id: "poachedEggs"
             },
             {
                 Name: "American pancakes",
-                Image: 'breakfast2.jpg'
+                Image: 'breakfast2.jpg',
+                Id: "pancakes"
+
             },
             {
                 Name: "Peanut butter banana oatmeal",
-                Image: 'breakfast3.jpg'
+                Image: 'breakfast3.jpg',
+                Id: "oatmeal"
             }
         ]
     },
@@ -125,7 +130,6 @@ class Slider extends React.Component {
                     }
                 </Carousel>
             </div>
-
         )
     }
 }
