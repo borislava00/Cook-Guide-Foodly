@@ -1,1 +1,34 @@
 
+.appBar{
+    height: 70px;
+    background-color:grey; 
+    display: flex; 
+    justify-content: end; 
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.logoImg{
+    height: 65px; 
+    width: 65px;
+    margin-left: 10px;
+}
+.recepiPicture{
+    height: 400px;
+    width: 400px;
+    margin-bottom: -3px;
+}
+.recipeStyle{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 100px;
+    padding: 0; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.instructions{
+    font-family: 'FreeMono'; 
+    font-weight: bold; 
+    font-size: 25px;
+}
